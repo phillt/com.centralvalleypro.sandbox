@@ -8,7 +8,7 @@ layout: default
 	  <h3>Realized.</h3>
 	  <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
       <div>
-        <a href="#about" class="btn-get-started scrollto">Request a Quote</a>
+        <a href="contact" class="btn-get-started scrollto">Request a Quote</a>
       </div>
     </div>
 
@@ -87,7 +87,7 @@ layout: default
       <div class="container">
         <div class="row service-title show">
 		<div class="col-lg-6">
-		 <h1 id="back-service" class>Back To Services</h1>
+		 <h1 id="back-service" class> Back To Services</h1>
 		</div>
 		<div class="col-lg-6">
 		<h3><img src="img/bath.png"> Bathroom Renovation</h3>
@@ -95,12 +95,16 @@ layout: default
 		</div>
 		<div class="row service-video top">
 		<div class="col-lg-6">
-		<img src="img/vid01.jpg">
+		<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+</div>
 		</div>
 		<div class="col-lg-6">
 		 <h1>Bathroom Renovation</h1>
 		 <p>Bathroom renovations can be overly expensive if your project dollars are not spent wisely. Don't take a chance trying to do it yourself.</p>
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ex et ipsum feugiat molestie. Ut porta, est nec mattis commodo, nisi ligula molestie orci, at pretium neque mi in dolor. Suspendisse vehicula aliquam pellentesque. </p>
+
 		<p>Maecenas posuere tempus lectus, non ultricies nisl. </p>
 		</div>
 		</div>
@@ -108,17 +112,25 @@ layout: default
 		<div class="col-lg-6">
 		 <h1>Bathroom Renovation</h1>
 		 <p>Bathroom renovations can be overly expensive if your project dollars are not spent wisely. Don't take a chance trying to do it yourself.</p>
+
 		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
 		<li>Ut at ex et ipsum feugiat molestie. </li>
 		<li>Ut porta, est nec mattis commodo</li>
 		<li>Nisi ligula molestie orci, at pretium neque mi in dolor.</li>
 		</div>
 		<div class="col-lg-6">
-		<img src="img/vid02.jpg">
+		<div class="w3-content w3-display-container">
+	  <img class="mySlides" src="img/vid02.jpg" style="width:100%">
+	  <img class="mySlides" src="img/vid01.jpg" style="width:100%">
+	  <img class="mySlides" src="img/vid02.jpg" style="width:100%">
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
 		</div>
 		</div>
 		<div class="col-lg-3 cta-btn-container text-center service">
-            <a class="cta-btn align-middle" href="#">Request a quote</a>
+            <a class="cta-btn align-middle" href="contact">Request a quote</a>
          </div>
 	  </div>
 	</section><section id="testimonials" class="wow fadeInUp">
@@ -187,7 +199,7 @@ layout: default
         </div>
 		
 		<div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="/contact">Get A Quote</a>
+            <a class="cta-btn align-middle" href="contact">Get A Quote</a>
           </div>
 
       </div>
