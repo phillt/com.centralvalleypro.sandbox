@@ -13,7 +13,57 @@ layout: default
     </div>
 
     </div>
-  </section>
+  </section><section id="about-hide" class="wow slide-testi hide-service hide">
+      <div class="container">
+        <div class="row service-title show">
+		<div class="col-lg-6">
+		 <h1 id="back-service" class> Back To Services</h1>
+		</div>
+		<div class="col-lg-6">
+		<h3><img src="img/bath.png"> Bathroom Renovation</h3>
+		</div>
+		</div>
+		<div class="row service-video top">
+		<div class="col-lg-6">
+		<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+</div>
+		</div>
+		<div class="col-lg-6">
+		 <h1>Bathroom Renovation</h1>
+		 <p>Bathroom renovations can be overly expensive if your project dollars are not spent wisely. Don't take a chance trying to do it yourself.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ex et ipsum feugiat molestie. Ut porta, est nec mattis commodo, nisi ligula molestie orci, at pretium neque mi in dolor. Suspendisse vehicula aliquam pellentesque. </p>
+
+		<p>Maecenas posuere tempus lectus, non ultricies nisl. </p>
+		</div>
+		</div>
+		<div class="row service-video bottom">
+		<div class="col-lg-6">
+		 <h1>Bathroom Renovation</h1>
+		 <p>Bathroom renovations can be overly expensive if your project dollars are not spent wisely. Don't take a chance trying to do it yourself.</p>
+
+		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+		<li>Ut at ex et ipsum feugiat molestie. </li>
+		<li>Ut porta, est nec mattis commodo</li>
+		<li>Nisi ligula molestie orci, at pretium neque mi in dolor.</li>
+		</div>
+		<div class="col-lg-6">
+		<div class="w3-content w3-display-container">
+	  <img class="mySlides" src="img/vid02.jpg" style="width:100%">
+	  <img class="mySlides" src="img/vid01.jpg" style="width:100%">
+	  <img class="mySlides" src="img/vid02.jpg" style="width:100%">
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+		</div>
+		</div>
+		<div class="col-lg-3 cta-btn-container text-center service">
+            <a class="cta-btn align-middle" href="contact">Request a quote</a>
+         </div>
+	  </div>
+	</section>
   <section id="about" class="wow fadeInUp slide-testi">
     <div class="container">
         <div class="row service-title">
@@ -83,57 +133,7 @@ layout: default
           </div>
 		</div>
     </div>
-    </section><section id="about-hide" class="wow fadeInUp slide-testi hide-service hide">
-      <div class="container">
-        <div class="row service-title show">
-		<div class="col-lg-6">
-		 <h1 id="back-service" class> Back To Services</h1>
-		</div>
-		<div class="col-lg-6">
-		<h3><img src="img/bath.png"> Bathroom Renovation</h3>
-		</div>
-		</div>
-		<div class="row service-video top">
-		<div class="col-lg-6">
-		<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
-</div>
-		</div>
-		<div class="col-lg-6">
-		 <h1>Bathroom Renovation</h1>
-		 <p>Bathroom renovations can be overly expensive if your project dollars are not spent wisely. Don't take a chance trying to do it yourself.</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ex et ipsum feugiat molestie. Ut porta, est nec mattis commodo, nisi ligula molestie orci, at pretium neque mi in dolor. Suspendisse vehicula aliquam pellentesque. </p>
-
-		<p>Maecenas posuere tempus lectus, non ultricies nisl. </p>
-		</div>
-		</div>
-		<div class="row service-video bottom">
-		<div class="col-lg-6">
-		 <h1>Bathroom Renovation</h1>
-		 <p>Bathroom renovations can be overly expensive if your project dollars are not spent wisely. Don't take a chance trying to do it yourself.</p>
-
-		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-		<li>Ut at ex et ipsum feugiat molestie. </li>
-		<li>Ut porta, est nec mattis commodo</li>
-		<li>Nisi ligula molestie orci, at pretium neque mi in dolor.</li>
-		</div>
-		<div class="col-lg-6">
-		<div class="w3-content w3-display-container">
-	  <img class="mySlides" src="img/vid02.jpg" style="width:100%">
-	  <img class="mySlides" src="img/vid01.jpg" style="width:100%">
-	  <img class="mySlides" src="img/vid02.jpg" style="width:100%">
-
-	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-	</div>
-		</div>
-		</div>
-		<div class="col-lg-3 cta-btn-container text-center service">
-            <a class="cta-btn align-middle" href="contact">Request a quote</a>
-         </div>
-	  </div>
-	</section><section id="testimonials" class="wow fadeInUp">
+    </section><section id="testimonials" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
           <h2 class="client-say">What our customer say?</h2>

@@ -9,7 +9,7 @@ permalink: contact
           <div class="col-lg-4 cont-left">          
 			<h2>Let’s Talk!</h2>
 			<h3 class="title-border"></h3>
-			<p>If you are curious to hear more about what we can offer, do not hesitate to get in touch. Send us your brief and learn how we work...</p>
+			<p class="left-space">If you are curious to hear more about what we can offer, do not hesitate to get in touch. Send us your brief and learn how we work...</p>
 			<div class="left-add">
 			<div class="contact-number">             
               <h3><i class="ion-ios-telephone-outline"></i> Phone Number</h3>

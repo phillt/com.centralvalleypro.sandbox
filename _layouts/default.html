@@ -8,7 +8,7 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -34,14 +34,217 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 
+
+</head>
+{% include base.html %}
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <!--<div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="fa fa-phone"></i> +1 5589 55488 55
+      </div>-->
+	  
+	  <div id="logo" class="pull-left">
+        <h1><a href="{{base}}" class="scrollto"><img src="img/logo.jpg"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+		<h5><img src="img/tag-stick.png"></h5>
+		<h6>Example Tagline 2018</h6>
+      </div>
+      <div class="social-links float-right">
+		
+		<h2><img src="img/tel.png"></h2>
+		<h5><img src="img/tag-stick.png"></h5>
+		<h3>Call Us Now <br> <span>800 123-4567</span></h3>
+		<h6><a href="contact">Get a Quote</a></h6>
+		
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+     <div id="logo" class="pull-left mob-logo">
+        <h1><a href="#body" class="scrollto">VALLEY PRO <span>CONTRACTOR</span></a></h1>
+        
+        <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="{{base}}">Home</a></li>
+		 <li class="menu-has-children"><a href="{{base}}#about" id="service">Services</a>
+            <ul>
+                          <li><a href="{{base}}#about-hide" id="btn1">Kitchen Remodeling</a></li>
+                          <li><a href="{{base}}#about-hide" id="btn2">Bathroom Renovation</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn3">Window Installation</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn4">Door Installation</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn5">Roofing</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn6">Sliding</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn7">Home Additions</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn8">Restoration Services</a></li>
+			  <li><a href="{{base}}#about-hide" id="btn9">Custom Home Building</a></li>
+            </ul>
+          </li> 
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <main id="main">
+   {{ content }}
+
+    
+    <!--==========================
+      Footer Top Section
+    ============================-->
+	
+	<section id="contact" class="wow fadeInUp foot-top">
+      <div class="container">
+	    <div class="row">
+          <div class="col-lg-8">
+		   <div class="foot-nav">
+		    <h1>Navigation</h1>
+			<h2></h2>
+			<ul>
+			 <li><a href="{{base}}">Home</a></li>
+			 <li><a href="{{base}}#about">Services</a></li>
+			 <li><a href="contact">Contact Us</a></li>
+			</ul>
+		   </div>
+		   <div class="foot-nav">
+		    <h1>Services</h1>
+			<h2></h2>
+			<ul>
+			 <li><a href="{{base}}#about-hide" id="residential">Residential Remodeling</a></li>
+			 <li><a href="{{base}}#about-hide" id="commercial">Commercial Remodeling</a></li>
+			 <li><a href="{{base}}#about-hide" id="maintainance">Service Maintenance</a></li>
+			 <li><a href="{{base}}#about-hide" id="electrical">Electrical</a></li>
+			 <li><a href="{{base}}#about-hide" id="plumbing">Plumbing</a></li>
+			</ul>
+		   </div>
+		   <div class="foot-nav three">
+			<ul>
+			 <li><a href="{{base}}#about-hide" id="construct">Construction</a></li>
+			 <li><a href="{{base}}#about-hide" id="roofing">Roofing</a></li>
+			 <li><a href="{{base}}#about-hide" id="cement">Cement Work</a></li>
+			 <li><a href="{{base}}#about-hide" id="damage">Damage Repair</a></li>
+			</ul>
+		   </div>
+		   
+		  </div>
+		  
+		  <div class="col-lg-4 right">
+		    <img src="img/foot-logo.png">
+			
+			<div class="contact-phone">
+              
+              <h3><i class="ion-ios-telephone-outline"></i> Phone Number</h3>
+              <p>(800)123-4567</a></p>
+            </div>
+			
+			<div class="contact-address">
+              
+              <h3><i class="ion-ios-location-outline"></i> Address</h3>
+              <p>Valley Pro Contractor 218 N Magnolia Ave Clovis, CA 93611 </p>
+            </div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	<!--==========================
+      Footer Top Section end
+    ============================-->
+    
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+         Copyright &copy; 2018 | Valley Pro Contractor
+      </div>
+        
+      <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+				  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+      </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+<!--- service links -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
           <script>
+		    $(document).ready(function(){
+				 if (/#about-hide/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#about-hide").show();
+					window.location="#about-hide";
+				 }
+             	});		
+			 
              $(document).ready(function(){
              	$("#btn1").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();     
+					$("#about-hide").show();
              	});
-             });			 
+             });				
 			 $(document).ready(function(){
              	$("#btn2").click(function(){
              		$("#about").hide();
@@ -210,197 +413,11 @@
 			 $("#about").show();					
              	});
 				});
+				
+			
           </script>
-</head>
-{% include base.html %}
-<body id="body">
 
-  <!--==========================
-    Top Bar
-  ============================-->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <!--<div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="fa fa-phone"></i> +1 5589 55488 55
-      </div>-->
-	  
-	  <div id="logo" class="pull-left">
-        <h1><a href="{{base}}" class="scrollto"><img src="img/logo.jpg"></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-		<h5><img src="img/tag-stick.png"></h5>
-		<h6>Example Tagline 2018</h6>
-      </div>
-      <div class="social-links float-right">
-		
-		<h2><img src="img/tel.png"></h2>
-		<h5><img src="img/tag-stick.png"></h5>
-		<h3>Call Us Now <br> <span>800 123-4567</span></h3>
-		<h6><a href="contact">Get a Quote</a></h6>
-		
-      </div>
-    </div>
-  </section>
+<!--- service links end --->
 
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container">
-
-      <!---<div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1>
-        
-        <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
-      </div>-->
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="{{base}}">Home</a></li>
-		 <li class="menu-has-children"><a href="{{base}}#about" id="service">Services</a>
-            <ul>
-              <li><a href="#" id="btn1">Kitchen Remodeling</a></li>
-              <li><a href="#" id="btn2">Bathroom Renovation</a></li>
-			  <li><a href="#" id="btn3">Window Installation</a></li>
-			  <li><a href="#" id="btn4">Door Installation</a></li>
-			  <li><a href="#" id="btn5">Roofing</a></li>
-			  <li><a href="#" id="btn6">Sliding</a></li>
-			  <li><a href="#" id="btn7">Home Additions</a></li>
-			  <li><a href="#" id="btn8">Restoration Services</a></li>
-			  <li><a href="#" id="btn9">Custom Home Building</a></li>
-            </ul>
-          </li> 
-          <li><a href="contact">Contact</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
-  <main id="main">
-   {{ content }}
-
-    
-    <!--==========================
-      Footer Top Section
-    ============================-->
-	
-	<section id="contact" class="wow fadeInUp foot-top">
-      <div class="container">
-	    <div class="row">
-          <div class="col-lg-8">
-		   <div class="foot-nav">
-		    <h1>Navigation</h1>
-			<h2></h2>
-			<ul>
-			 <li><a href="{{base}}">Home</a></li>
-			 <li><a href="{{base}}#about">Services</a></li>
-			 <li><a href="contact">Contact Us</a></li>
-			</ul>
-		   </div>
-		   <div class="foot-nav">
-		    <h1>Services</h1>
-			<h2></h2>
-			<ul>
-			 <li><a href="#" id="residential">Residential Remodeling</a></li>
-			 <li><a href="#" id="commercial">Commercial Remodeling</a></li>
-			 <li><a href="#" id="maintainance">Service Maintenance</a></li>
-			 <li><a href="#" id="electrical">Electrical</a></li>
-			 <li><a href="#" id="plumbing">Plumbing</a></li>
-			</ul>
-		   </div>
-		   <div class="foot-nav three">
-			<ul>
-			 <li><a href="#" id="construct">Construction</a></li>
-			 <li><a href="#" id="roofing">Roofing</a></li>
-			 <li><a href="#" id="cement">Cement Work</a></li>
-			 <li><a href="#" id="damage">Damage Repair</a></li>
-			</ul>
-		   </div>
-		   
-		  </div>
-		  
-		  <div class="col-lg-4 right">
-		    <img src="img/foot-logo.png">
-			
-			<div class="contact-phone">
-              
-              <h3><i class="ion-ios-telephone-outline"></i> Phone Number</h3>
-              <p>(800)123-4567</a></p>
-            </div>
-			
-			<div class="contact-address">
-              
-              <h3><i class="ion-ios-location-outline"></i> Address</h3>
-              <p>Valley Pro Contractor 218 N Magnolia Ave Clovis, CA 93611 </p>
-            </div>
-		  </div>
-		</div>
-	  </div>
-	</section>
-	
-	<!--==========================
-      Footer Top Section end
-    ============================-->
-    
-
-  </main>
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-         Copyright &copy; 2018 | Valley Pro Contractor
-      </div>
-        
-      <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-				  <a href=""><i class="fa fa-instagram"></i></a>
-                </div>
-      </div>
-  </footer><!-- #footer -->
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  if (n > x.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-		 x[i].style.display = "none";  
-	  }
-	  x[slideIndex-1].style.display = "block";  
-	}
-	</script>
 </body>
 </html>
