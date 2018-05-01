@@ -10,7 +10,25 @@
   <!-- Favicons -->
   <link href="img/favicon.ico" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+	
+   <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiO1BXDEZoM9V7o0Aqc-uZ8_FUtAFawTs"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+	
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
@@ -24,7 +42,17 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+  <script>
+	$(document).ready(function() {
+	  //carousel options
+	  $('#quote-carousel').carousel({
+	    pause: true, interval: 10000,
+	  });
+	});
+  </script>
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -71,29 +99,30 @@
   <!--==========================
     Header
   ============================-->
+  <div class="top-custom">
+  <div class="container">
+  <h1><a href="{{base}}" class="scrollto"><img src="img/logo.jpg"></a></h1>
+  <h3><img src="img/tel.png"> 800 123-4567</h3>
+  </div>
+</div>
+  
   <header id="header">
     <div class="container">
-
-     <div id="logo" class="pull-left mob-logo">
-        <h1><a href="#body" class="scrollto">VALLEY PRO <span>CONTRACTOR</span></a></h1>
-        
-        <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
-      </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="{{base}}">Home</a></li>
 		 <li class="menu-has-children"><a href="{{base}}#about" id="service">Services</a>
             <ul>
-                          <li><a href="{{base}}#about-hide" id="btn1">Kitchen Remodeling</a></li>
-                          <li><a href="{{base}}#about-hide" id="btn2">Bathroom Renovation</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn3">Window Installation</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn4">Door Installation</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn5">Roofing</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn6">Sliding</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn7">Home Additions</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn8">Restoration Services</a></li>
-			  <li><a href="{{base}}#about-hide" id="btn9">Custom Home Building</a></li>
+              <li><a href="{{base}}#Kitchen-Remodeling" id="btn1">Kitchen Remodeling</a></li>
+              <li><a href="{{base}}#Bathroom-Renovation" id="btn2">Bathroom Renovation</a></li>
+			  <li><a href="{{base}}#Window-Installation" id="btn3">Window Installation</a></li>
+			  <li><a href="{{base}}#Door-Installation" id="btn4">Door Installation</a></li>
+			  <li><a href="{{base}}#Roofing" id="btn5">Roofing</a></li>
+			  <li><a href="{{base}}#Sliding" id="btn6">Sliding</a></li>
+			  <li><a href="{{base}}#Home-Additions" id="btn7">Home Additions</a></li>
+			  <li><a href="{{base}}#Restoration-Services" id="btn8">Restoration Services</a></li>
+			  <li><a href="{{base}}#Custom-Home-Building" id="btn9">Custom Home Building</a></li>
             </ul>
           </li> 
           <li><a href="contact">Contact</a></li>
@@ -126,19 +155,19 @@
 		    <h1>Services</h1>
 			<h2></h2>
 			<ul>
-			 <li><a href="{{base}}#about-hide" id="residential">Residential Remodeling</a></li>
-			 <li><a href="{{base}}#about-hide" id="commercial">Commercial Remodeling</a></li>
-			 <li><a href="{{base}}#about-hide" id="maintainance">Service Maintenance</a></li>
-			 <li><a href="{{base}}#about-hide" id="electrical">Electrical</a></li>
-			 <li><a href="{{base}}#about-hide" id="plumbing">Plumbing</a></li>
+			 <li><a href="{{base}}#Kitchen-Remodeling" id="kitchen">Kitchen Remodeling</a></li>
+			 <li><a href="{{base}}#Bathroom-Renovation" id="bathroom">Bathroom Renovation</a></li>
+			 <li><a href="{{base}}#Window-Installation" id="window">Window Installation</a></li>
+			 <li><a href="{{base}}#Door-Installation" id="door">Door Installation</a></li>
+			 <li><a href="{{base}}#Roofing" id="roofing">Roofing</a></li>
 			</ul>
 		   </div>
 		   <div class="foot-nav three">
 			<ul>
-			 <li><a href="{{base}}#about-hide" id="construct">Construction</a></li>
-			 <li><a href="{{base}}#about-hide" id="roofing">Roofing</a></li>
-			 <li><a href="{{base}}#about-hide" id="cement">Cement Work</a></li>
-			 <li><a href="{{base}}#about-hide" id="damage">Damage Repair</a></li>
+			 <li><a href="{{base}}#Sliding" id="sliding">Sliding</a></li>
+			 <li><a href="{{base}}#Home-Additions" id="home">Home Additions</a></li>
+			 <li><a href="{{base}}#Restoration-Services" id="restoration">Restoration Services</a></li>
+			 <li><a href="{{base}}#Custom-Home-Building" id="custom">Custom Home Building</a></li>
 			</ul>
 		   </div>
 		   
@@ -191,31 +220,16 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+ 
 <script>
+
 	var slideIndex = 1;
 	showDivs(slideIndex);
 
 	function plusDivs(n) {
 	  showDivs(slideIndex += n);
 	}
-
+    //for 1st slider
 	function showDivs(n) {
 	  var i;
 	  var x = document.getElementsByClassName("mySlides");
@@ -224,193 +238,507 @@
 	  for (i = 0; i < x.length; i++) {
 		 x[i].style.display = "none";  
 	  }
-	  x[slideIndex-1].style.display = "block";  
+	  x[slideIndex-1].style.display = "block";
+	  
+	  //for 2nd slider
+	  var a = document.getElementsByClassName("mySlides1");
+	  if (n > a.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = a.length}
+	  for (i = 0; i < a.length; i++) {
+		 a[i].style.display = "none";  
+	  }
+	  a[slideIndex-1].style.display = "block";
+	  
+	   //for 3rd slider
+	  var b = document.getElementsByClassName("mySlides2");
+	  if (n > b.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = b.length}
+	  for (i = 0; i < b.length; i++) {
+		 b[i].style.display = "none";  
+	  }
+	  b[slideIndex-1].style.display = "block";
+	  
+	   //for 4th slider
+	  var c = document.getElementsByClassName("mySlides3");
+	  if (n > c.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = c.length}
+	  for (i = 0; i < c.length; i++) {
+		 c[i].style.display = "none";  
+	  }
+	  c[slideIndex-1].style.display = "block";
+	  
+	   //for 5th slider
+	  var d = document.getElementsByClassName("mySlides4");
+	  if (n > d.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = d.length}
+	  for (i = 0; i < d.length; i++) {
+		 d[i].style.display = "none";  
+	  }
+	  d[slideIndex-1].style.display = "block";
+	  
+	   //for 6th slider
+	  var e = document.getElementsByClassName("mySlides5");
+	  if (n > e.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = e.length}
+	  for (i = 0; i < e.length; i++) {
+		 e[i].style.display = "none";  
+	  }
+	  e[slideIndex-1].style.display = "block";
+	  
+	   //for 7th slider
+	  var f = document.getElementsByClassName("mySlides6");
+	  if (n > f.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = f.length}
+	  for (i = 0; i < f.length; i++) {
+		 f[i].style.display = "none";  
+	  }
+	  f[slideIndex-1].style.display = "block";
+	  
+	   //for 8th slider
+	  var g = document.getElementsByClassName("mySlides7");
+	  if (n > g.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = g.length}
+	  for (i = 0; i < g.length; i++) {
+		 g[i].style.display = "none";  
+	  }
+	  g[slideIndex-1].style.display = "block";
+	  
+	   //for 9th slider
+	  var h = document.getElementsByClassName("mySlides8");
+	  if (n > a.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = h.length}
+	  for (i = 0; i < h.length; i++) {
+		 h[i].style.display = "none";  
+	  }
+	  h[slideIndex-1].style.display = "block";
+ 
 	}
+
 	</script>
 
 <!--- service links -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-          <script>
+ <script>
 		    $(document).ready(function(){
-				 if (/#about-hide/.test(window.location.href)) {
+				 if (/#Kitchen-Remodeling/.test(window.location.href)) {
              		$("#about").hide();
-					$("#about-hide").show();
-					window.location="#about-hide";
+					$("#Kitchen-Remodeling").show();
+					window.location="#Kitchen-Remodeling";
+				 }
+				 if (/#Bathroom-Renovation/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Bathroom-Renovation").show();
+					window.location="#Bathroom-Renovation";
+				 }
+				 if (/#Window-Installation/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Window-Installation").show();
+					window.location="#Window-Installation";
+				 }
+				 if (/#Door-Installation/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Door-Installation").show();
+					window.location="#Door-Installation";
+				 }
+				 if (/#Roofing/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Roofing").show();
+					window.location="#Roofing";
+				 }
+				 if (/#Sliding/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Sliding").show();
+					window.location="#Sliding";
+				 }
+				 if (/#Home-Additions/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Home-Additions").show();
+					window.location="#Home-Additions";
+				 }
+				 if (/#Restoration-Services/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Restoration-Services").show();
+					window.location="#Restoration-Services";
+				 }
+				 if (/#Custom-Home-Building/.test(window.location.href)) {
+             		$("#about").hide();
+					$("#Custom-Home-Building").show();
+					window.location="#Custom-Home-Building";
 				 }
              	});		
-			 
+ </script>			 
+ <script>
              $(document).ready(function(){
              	$("#btn1").click(function(){
              		$("#about").hide();
-					$("#about-hide").show();
+             		$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Kitchen-Remodeling").show();
+			        window.location.href='#Kitchen-Remodeling';
              	});
-             });				
-			 $(document).ready(function(){
              	$("#btn2").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Bathroom-Renovation").show();
+			        window.location.href='#Bathroom-Renovation';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn3").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Window-Installation").show();
+			        window.location.href='#Window-Installation';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn4").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Door-Installation").show();
+			        window.location.href='#Door-Installation';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn5").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Roofing").show();
+			        window.location.href='#Roofing';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn6").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Sliding").show();
+			        window.location.href='#Sliding';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn7").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Home-Additions").show();
+			        window.location.href='#Home-Additions';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn8").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Custom-Home-Building").hide();
+             		$("#Restoration-Services").show();
+			        window.location.href='#Restoration-Services';
              	});
-             });
-			 $(document).ready(function(){
              	$("#btn9").click(function(){
              		$("#about").hide();
-             		$("#about-hide").show();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").show();
+			        window.location.href='#Custom-Home-Building';
              	});
-             });
-			 $(document).ready(function(){
-			 $("#service").click(function(){
+			    $("#service").click(function(){
+				
              		$("#about").show();
-					$("#about-hide").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+					$("#Window-Installation").hide();
+					$("#Door-Installation").hide();
+					$("#Roofing").hide();
+					$("#Sliding").hide();
+					$("#Home-Additions").hide();
+					$("#Restoration-Services").hide();
+					$("#Custom-Home-Building").hide();
+				    window.location.href='#about';
              	});
-				});
-			 $(document).ready(function(){
 			 $("#service1").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Kitchen-Remodeling").show();
+					window.location.href='#Kitchen-Remodeling';
              	});
-				});
-			 $(document).ready(function(){
 			 $("#service2").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Bathroom-Renovation").show();
+					window.location.href='#Bathroom-Renovation';
              	});
-				});
-			 $(document).ready(function(){
 			 $("#service3").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Window-Installation").show();
+					window.location.href='#Window-Installation';
              	});
-				});
-			$(document).ready(function(){
 			 $("#service4").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Door-Installation").show();
+					window.location.href='#Door-Installation';
              	});
-				});
-			$(document).ready(function(){
 			 $("#service5").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Roofing").show();
+					window.location.href='#Roofing';
              	});
-				});
-			$(document).ready(function(){
 			 $("#service6").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Sliding").show();
+					window.location.href='#Sliding';
              	});
-				});
-			$(document).ready(function(){
 			 $("#service7").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Home-Additions").show();
+					window.location.href='#Home-Additions';
              	});
-				});
-			$(document).ready(function(){
 			 $("#service8").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Restoration-Services").show();
+					window.location.href='#Restoration-Services';
              	});
-				});
-			$(document).ready(function(){
 			 $("#service9").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+					$("#Custom-Home-Building").show();
+					window.location.href='#Custom-Home-Building';
              	});
-				});
-				$(document).ready(function(){
-			 $("#residential").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+			 $("#kitchen").click(function(){
+					$("#about").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Kitchen-Remodeling").show();
+					window.location.href='#Kitchen-Remodeling';
              	});
-				});
-				$(document).ready(function(){
-			 $("#commercial").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+			 $("#bathroom").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Bathroom-Renovation").show();
+					window.location.href='#Bathroom-Renovation';
              	});
-				});
-				$(document).ready(function(){
-			 $("#maintainance").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+			 $("#window").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Window-Installation").show();
+					window.location.href='#Window-Installation';
              	});
-				});
-				$(document).ready(function(){
-			 $("#electrical").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+			 $("#door").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Door-Installation").show();
+					window.location.href='#Door-Installation';
              	});
-				});
-				$(document).ready(function(){
-			 $("#plumbing").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
-             	});
-				});
-				$(document).ready(function(){
-			 $("#construct").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
-             	});
-				});
-				$(document).ready(function(){
 			 $("#roofing").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Roofing").show();
+					window.location.href='#Roofing';
              	});
-				});
-				$(document).ready(function(){
-			 $("#cement").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+			 $("#sliding").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Sliding").show();
+					window.location.href='#Sliding';
              	});
-				});
-				$(document).ready(function(){
-			 $("#damage").click(function(){
-			 $("#about").hide();
-			 $("#about-hide").show();					
+			 $("#home").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Restoration-Services").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Home-Additions").show();
+					window.location.href='#Home-Additions';
              	});
-				});
-			 $(document).ready(function(){
-			 $("#back-service").click(function(){
-			 $("#about-hide").hide();
-			 $("#about").show();					
+			 $("#restoration").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Custom-Home-Building").hide();
+					$("#Restoration-Services").show();
+					window.location.href='#Restoration-Services';
+             	});
+			 $("#custom").click(function(){
+					$("#about").hide();
+					$("#Kitchen-Remodeling").hide();
+					$("#Bathroom-Renovation").hide();
+             		$("#Window-Installation").hide();
+             		$("#Door-Installation").hide();
+             		$("#Roofing").hide();
+             		$("#Sliding").hide();
+             		$("#Home-Additions").hide();
+             		$("#Restoration-Services").hide();
+					$("#Custom-Home-Building").show();
+					window.location.href='#Custom-Home-Building';
+             	});
+			 
+			 $(".back-service").click(function(){
+			 $(".slide-testi").hide();
+			 $("#about").show();
+				 window.location='#about';
+				 window.location.href='#about';
              	});
 				});
 				
