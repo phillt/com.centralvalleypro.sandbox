@@ -26,7 +26,7 @@ layout: default
 			</div>
           </div>
 		  <div class="col-lg-6">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.2935847925814!2d-74.17665108414587!3d40.68953137933431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c252e1c5ec0cef%3A0xb3f3b437c5d7f286!2sNewark+Liberty+International+Airport!5e0!3m2!1sen!2sin!4v1522921811206" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.348286105685!2d-119.67003068507606!3d36.834133979941605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945b0c1baad2ab%3A0x8591352efa299bd9!2sJ.J.+&#39;LL+Do+It!5e0!3m2!1sen!2sin!4v1525771560795" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>  
     </section>
