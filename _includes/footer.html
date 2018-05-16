@@ -73,11 +73,31 @@
         </div>
 
         <div class="social">
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-google-plus"></i></a>
-            <a href=""><i class="fa fa-linkedin"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
+            {% if site.data.settings.socialMedia.twitter.url.size > 1 %}
+                <a href="{{site.data.settings.socialMedia.twitter.url}}">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            {% endif %}
+            {% if site.data.settings.socialMedia.facebook.url.size > 1 %}
+                <a href="{{site.data.settings.socialMedia.facebook.url}}">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            {% endif %}
+            {% if site.data.settings.socialMedia.googlePlus.url.size > 1 %}
+                <a href="{{site.data.settings.socialMedia.googlePlus.url}}">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            {% endif %}
+            {% if site.data.settings.socialMedia.linkedIn.url.size > 1 %}
+                <a href="{{site.data.settings.socialMedia.linkedIn.url}}">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            {% endif %}
+            {% if site.data.settings.socialMedia.instagram.url.size > 1 %}
+                <a href="{{site.data.settings.socialMedia.instagram.url}}">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            {% endif %}
         </div>
     </div>
 </footer><!-- #footer -->
