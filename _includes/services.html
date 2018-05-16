@@ -1,70 +1,31 @@
 <section id="about" class="wow fadeInUp slide-testi1">
     <div class="container">
+
         <div class="row service-title">
-        <div class="col-lg-12">
-        <h1>OUR SERVICES</h1>
-        <h2></h2>
+            <div class="col-lg-12">
+                <h1>OUR SERVICES</h1>
+                <h2></h2>
+            </div>
         </div>
-        </div>
-        <div class="row service-text">
-            <div class="col-lg-4 one" id="service1">
-            <h1><img src="img/services/srv01.png"></h1>
-            <h1><img src="img/services/hov01.png" class="img-top1"></h1>
-            <h2>Kitchen Remodeling</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
-        </div>
-        <div class="col-lg-4 two" id="service2">
-            <h1><img src="img/services/serv22.png"></h1>
-            <h1><img src="img/services/srv02.png" class="img-top2"></h1>
-            <h2>Bathroom Renovation</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
-        </div>
-    <div class="col-lg-4 three" id="service3">
-        <h1><img src="img/services/srv03.png"></h1>
-        <h1><img src="img/services/hov03.png" class="img-top3"></h1>
-        <h2>Window Installation</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. </p>
-    </div>
-    </div>
-    <div class="row service-text">
-        <div class="col-lg-4 four" id="service4">
-        <h1><img src="img/services/srv04.png"></h1>
-        <h1><img src="img/services/hov04.png" class="img-top4"></h1>
-        <h2>Door Installation</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
-    </div>
-    <div class="col-lg-4 five" id="service5">
-        <h1><img src="img/services/srv05.png"></h1>
-        <h1><img src="img/services/hov05.png" class="img-top5"></h1>
-        <h2>Roofing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
-    </div>
-    <div class="col-lg-4 six" id="service6">
-        <h1><img src="img/services/srv06.png"></h1>
-        <h1><img src="img/services/hov06.png" class="img-top6"></h1>
-        <h2>Sliding</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. </p>
-    </div>
-    </div>
-    <div class="row service-text">
-        <div class="col-lg-4 seven" id="service7">
-        <h1><img src="img/services/srv07.png"></h1>
-        <h1><img src="img/services/hov07.png" class="img-top7"></h1>
-        <h2>Home Additions</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
-    </div>
-    <div class="col-lg-4 eight" id="service8">
-        <h1><img src="img/services/srv08.png"></h1>
-        <h1><img src="img/services/hov08.png" class="img-top8"></h1>
-        <h2>Restoration Services</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
-    </div>
-    <div class="col-lg-4 nine" id="service9">
-        <h1><img src="img/services/srv09.png"></h1>
-        <h1><img src="img/services/hov09.png" class="img-top9"></h1>
-        <h2>Custom Home Building</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. </p>
-    </div>
-    </div>
+
+        {% assign rowIndex = 0 %}
+
+        {% for service in site.data.services %}
+            {% if rowIndex == 0 %}
+                <div class="row service-text">
+            {% endif %}
+                    <div class="col-lg-4 one goButton" data-to="{{service.key}}">
+                        <h1><img src="img/services/srv01.png"></h1>
+                        <h1><img src="img/services/hov01.png" class="img-top1"></h1>
+                        <h2>{{service.name}}</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.</p>
+                    </div>
+            {% if rowIndex == 2 %}
+                </div>
+                {% assign rowIndex = 0 %}
+            {% else %}
+                {% assign rowIndex = rowIndex | plus: 1  %}
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
