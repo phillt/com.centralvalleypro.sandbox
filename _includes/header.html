@@ -91,9 +91,8 @@
                 <li class="menu-has-children"><a href="{{base}}#about" id="service">Services</a>
                     <ul>
                         {% for service in site.data.services %}
-                        <li><a href="{{base}}#{{service.key}}" class="goButton" data-to="{{service.key}}">{{service.name}}</a></li>
+                        <li><a href="/#{{service.key}}" class="goButton" data-to="{{service.key}}">{{service.name}}</a></li>
                         {% endfor %}
-
                     </ul>
                 </li>
                 <li><a href="/contact">Contact</a></li>
