@@ -75,29 +75,4 @@
 <!--==========================
    Header
  ============================-->
-<div class="top-custom">
-    <div class="container">
-        <h1><a href="{{base}}" class="scrollto"><img src="img/logo.jpg"></a></h1>
-        <h3><img src="img/tel.png"> 800 123-4567</h3>
-    </div>
-</div>
 
-<header id="header">
-    <div class="container">
-        <!--Create Include here-->
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li class="menu-active"><a href="/">Home</a></li>
-                <li class="menu-has-children"><a href="{{base}}#about" id="service">Services</a>
-                    <ul>
-                        {% for service in site.data.services %}
-                        <li><a href="/#{{service.key}}" class="goButton" data-to="{{service.key}}">{{service.name}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav><!-- #nav-menu-container -->
-        <!--End include here -->
-    </div>
-</header><!-- #header -->
