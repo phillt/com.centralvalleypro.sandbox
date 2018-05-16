@@ -1,0 +1,19 @@
+---
+- key: Kitchen-Remodeling
+  name: Kitchen Remodeling
+- key: Bathroom-Renovation
+  name: Bathroom Renovation
+- key: Window-Installation
+  name: Window Installation
+- key: Door-Installation
+  name: Door Installation
+- key: Roofing
+  name: Roofing
+- key: Sliding
+  name: Sliding
+- key: Home-Additions
+  name: Home Additions
+- key: Restoration-Services
+  name: Restoration Services
+- key: Custom-Home-Building
+  name: Custom Home Building
