@@ -23,7 +23,7 @@
 
                 </div>
                 <div class="foot-nav three">
-                   
+
                 </div>
 
             </div>
@@ -31,16 +31,27 @@
             <div class="col-lg-4 right">
                 <img src="img/foot-logo.png">
 
+                {% if site.data.settings.phones[0] %}
                 <div class="contact-phone">
-
                     <h3><i class="ion-ios-telephone-outline"></i> Phone Number</h3>
-                    <p>(800)123-4567</a></p>
+                        {% for phone in site.data.settings.phones %}
+                            <p title="{{phone.title}}">{{phone.number}}</a></p>
+                        {% endfor %}
                 </div>
+                {% endif %}
+
 
                 <div class="contact-address">
 
                     <h3><i class="ion-ios-location-outline"></i> Address</h3>
-                    <p>Valley Pro Contractor 218 N Magnolia Ave Clovis, CA 93611 </p>
+                    <p>
+                        {{site.data.settings.companyName}} <br />
+                        {{site.data.settings.address.street}}<br />
+                        {% if site.data.settings.address.address2.size > 1 %}
+                            {{site.data.settings.address.address2}}<br />
+                        {% endif %}
+                        {{site.data.settings.address.city}}, {{site.data.settings.address.state}} {{site.data.settings.address.zip}}
+                    </p>
                 </div>
             </div>
         </div>
@@ -58,7 +69,7 @@
 <footer id="footer">
     <div class="container">
         <div class="copyright">
-            Copyright &copy; 2018 | Valley Pro Contractor
+            Copyright &copy; 2018 | {{site.data.settings.companyName}}
         </div>
 
         <div class="social">

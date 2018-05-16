@@ -14,7 +14,7 @@ phones:
   number: 1 (800) 123 4567
 emails:
 - title: Human Resources
-  email: example@valleypro.com
+  address: example@valleypro.com
 socialMedia:
   facebook:
     url: ''

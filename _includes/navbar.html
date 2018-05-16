@@ -23,10 +23,17 @@
             <h6>Example Tagline 2018</h6>
         </div>
         <div class="social-links float-right">
-
+            {% if site.data.settings.phones[0] %}
             <h2><img src="img/tel.png"></h2>
+
             <h5><img src="img/tag-stick.png"></h5>
-            <h3>Call Us Now <br> <span>800 123-4567</span></h3>
+
+            <h3>Call Us Now
+                <br>
+                <span title="{{site.data.settings.phones[0].title}}">{{site.data.settings.phones[0].number}}</span>
+            </h3>
+            {% endif %}
+
             <h6><a href="contact">Get a Quote</a></h6>
 
         </div>

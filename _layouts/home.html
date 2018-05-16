@@ -10,9 +10,9 @@
     <section  class="intro">
         <div class="container">
             <div class="intro-content">
-                <h2>Your Visions,</h2>
-                <h3>Realized.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+                <h2>{{page.heading_line1}}</h2>
+                <h3>{{page.heading_line2}}</h3>
+                {{ content }}
                 <div>
                     <a href="contact" class="btn-get-started scrollto">Request a Quote</a>
                 </div>
@@ -29,7 +29,7 @@
 
     {% include testimonials.html %}
 
-    {{ content }}
+
 </main>
 
 <!--==========================
