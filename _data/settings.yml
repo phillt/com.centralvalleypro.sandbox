@@ -1,0 +1,31 @@
+---
+companyName: Valley Pro Contractor
+tagline: example tagline
+address:
+  street: 519 Fairmont Dr.
+  address2: ''
+  city: Los Banos
+  zip: '93635'
+  state: CA
+phones:
+- title: Human Resources
+  number: 1 (800) 123 4567
+- title: Billing
+  number: 1 (800) 123 4567
+emails:
+- title: Human Resources
+  email: example@valleypro.com
+socialMedia:
+  facebook:
+    url: ''
+  twitter:
+    handle: ''
+    url: ''
+  instagram:
+    handle: ''
+    url: ''
+  googlePlus:
+    handle: ''
+    url: ''
+  linkedIn:
+    url: ''
