@@ -15,20 +15,15 @@
                     <h1>Services</h1>
                     <h2></h2>
                     <ul>
-                        <li><a href="{{base}}#Kitchen-Remodeling" id="kitchen">Kitchen Remodeling</a></li>
-                        <li><a href="{{base}}#Bathroom-Renovation" id="bathroom">Bathroom Renovation</a></li>
-                        <li><a href="{{base}}#Window-Installation" id="window">Window Installation</a></li>
-                        <li><a href="{{base}}#Door-Installation" id="door">Door Installation</a></li>
-                        <li><a href="{{base}}#Roofing" id="roofing">Roofing</a></li>
+                    {% for service in site.data.services %}
+                        <li><a href="/#{{service.key}}" class="goButton" data-to="{{service.key}}">{{service.name}}</a></li>
+                    {% endfor %}
                     </ul>
+
+
                 </div>
                 <div class="foot-nav three">
-                    <ul>
-                        <li><a href="{{base}}#Sliding" id="sliding">Sliding</a></li>
-                        <li><a href="{{base}}#Home-Additions" id="home">Home Additions</a></li>
-                        <li><a href="{{base}}#Restoration-Services" id="restoration">Restoration Services</a></li>
-                        <li><a href="{{base}}#Custom-Home-Building" id="custom">Custom Home Building</a></li>
-                    </ul>
+                   
                 </div>
 
             </div>

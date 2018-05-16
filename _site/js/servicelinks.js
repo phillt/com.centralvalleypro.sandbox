@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 
     // Check if there is a location hash
